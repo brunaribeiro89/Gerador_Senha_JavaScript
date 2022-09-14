@@ -1,0 +1,124 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+  
+}
+html,body{
+    height: auto;
+    min-height: 100vh;
+}
+html {
+    background:linear-gradient(180deg, #fef6e4 0%,#f3d2c1 100%);
+}
+input:focus{
+   outline:none;
+}
+#register-container{
+    max-width: 900px;
+    min-height: 80vh;
+    margin:2rem auto;
+    display: flex;
+    box-shadow: rgba(50,50,93,0.25)0px 13px 27px -5px, rgba(0,0,0,0.3)0px 8px 16px -8px;
+
+}
+#register-banner{
+    background: url(../img/desola-lanre-ologun-zYgV-NGZtlA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+
+}
+#banner-layer{
+    background-color: rgba(0,0,0,0.3);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+#register-banner h1{
+    color:#f3d2c1;
+   font-size: 2.5rem;
+ 
+
+}
+#register-form{
+  background-color: #fef6e4;
+  padding:2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+
+}
+#register-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+#register-form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #172c66;
+    font-size: 0.8rem;
+}
+.form-control{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+.form-control input {
+    background-color: #fef6e4;
+    border: none;
+    border-bottom: 2px solid #001858;
+    padding: 0.6rem 0;
+
+}
+#generate-password{
+    font-weight: bold;
+    cursor:pointer;
+    transition: 0.4s;
+
+}
+#generate-password:hover{
+    color: #8bd3dd;
+}
+
+#register-form  #generated-password {
+ border: 1px solid #001858;
+ border-radius: 4px;
+ font-weight: bold;
+ font-size:1.2rem;
+ padding: 0.4rem;
+ color: #172c66;
+ text-align: center;
+ margin-bottom: 1rem;
+ display:none;
+}
+#register-form  #generated-password p {
+    color: #f582ae;
+    margin-bottom: 0.5rem;
+
+}
+#register-form input[type="submit"]{
+    background-color: #f582ae;
+    font-weight: bold;
+    color: #001858;
+    opacity: 0.8;
+    border:none;
+    border-radius:1.5rem;
+    padding: 1rem 1.2rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: 0.4s;
+}
+#register-form input[type="submit"]:hover{
+    background-color:#e94a87;
+    opacity: 1;
+}
